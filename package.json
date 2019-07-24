@@ -1,6 +1,6 @@
 {
   "name": "@pefish/js-util-file",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "types": "./types/file.d.ts",
   "main": "./lib/file.js",
   "scripts": {
