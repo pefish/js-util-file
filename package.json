@@ -1,6 +1,6 @@
 {
   "name": "@pefish/js-util-file",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "types": "./types/file.d.ts",
   "main": "./lib/file.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "prepublish": "yarn build"
   },
   "dependencies": {
-    "@pefish/js-error": "^0.0.5",
-    "@pefish/js-node-assist": "^0.6.0"
+    "@pefish/js-error": "^0.1.1",
+    "@pefish/js-node-assist": "^0.6.6"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
