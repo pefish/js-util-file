@@ -1,7 +1,7 @@
 {
   "name": "@pefish/js-util-file",
-  "version": "0.0.1",
-  "types": "./types/*.d.ts",
+  "version": "0.0.2",
+  "types": "./types/file.d.ts",
   "main": "./lib/file.js",
   "scripts": {
     "test": "mocha --require ts-node/register src/**/*.test.ts",

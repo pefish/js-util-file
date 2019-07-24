@@ -107,15 +107,6 @@ export default class FileUtil {
     return process.cwd()
   }
 
-  /**
-   * 强制删除文件或目录
-   * @param filenameOrPath {string} 绝对路径
-   */
-  static remove (filenameOrPath) {
-    const ShellHelper = require('../helpers/shell')
-    new ShellHelper(false).execSyncInSilent(`rm -rf ${filenameOrPath}`)
-  }
-
   static isDirectory (filenameOrPath) {
     let result = false
     try {
