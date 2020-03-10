@@ -76,12 +76,20 @@ export default class FileUtil {
    * @param data {string | object}
    * @returns {*}
    */
-  static writeSync (filepath, data) {
+  static writeSync (filepath: string, data: string | {[x: string]: any}) {
     if (typeof data !== 'string') {
       data = JSON.stringify(data)
     }
     FileUtil.mkdirSync(path.dirname(filepath))
     return fs.writeFileSync(filepath, data)
+  }
+
+  static writeAppendSync (filepath: string, data: string | {[x: string]: any}) {
+    if (typeof data !== 'string') {
+      data = JSON.stringify(data)
+    }
+    FileUtil.mkdirSync(path.dirname(filepath))
+    return fs.appendFileSync(filepath, data)
   }
 
   /**
